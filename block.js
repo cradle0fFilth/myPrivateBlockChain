@@ -7,6 +7,7 @@ const EC = require("elliptic").ec,ec = new EC("secp256k1");
 const MINT_KEY_PAIR = ec.genKeyPair();
 const MINT_PUBLIC_ADDRESS = MINT_KEY_PAIR.getPublic("hex");
 const holderKeyPair = ec.genKeyPair();
+console.log(MINT_PUBLIC_ADDRESS)
 
 class Block {
     constructor(timestamp = "", data = []) {
@@ -195,3 +196,9 @@ myChain.mineTransactions(holderKeyPair.getPublic("hex"));
 // Prints out balance of both address
 console.log("Your balance:", myChain.getBalance(holderKeyPair.getPublic("hex")));
 console.log("Your girlfriend's balance:", myChain.getBalance(girlfriendWallet.getPublic("hex")));
+module.exports = {
+    Block,
+    Blockchain,
+    Transaction,
+    myChain,
+};
