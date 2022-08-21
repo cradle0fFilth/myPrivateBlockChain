@@ -108,6 +108,7 @@ class Blockchain{
         }
     }
 
+    // reward address is miner address
     mineTransactions(rewardAddress) {
         let gas = 0;
 
