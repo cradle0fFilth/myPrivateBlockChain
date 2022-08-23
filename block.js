@@ -180,7 +180,6 @@ const myChain = new Blockchain();
 console.log(myChain)
 
 // Your original balance is 100000
-
 const girlfriendWallet = ec.genKeyPair();
 
 // Create a transaction
