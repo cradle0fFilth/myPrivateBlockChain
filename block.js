@@ -17,7 +17,7 @@ class Block {
         this.nonce = 0;
     }
 
-    // Our hash function.
+    // Our get hash function.
     getHash() {
         return SHA256(this.prevHash + this.timestamp + JSON.stringify(this.data) + this.nonce);
     }
