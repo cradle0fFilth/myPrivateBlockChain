@@ -2,7 +2,7 @@ const crypto = require("crypto"),SHA256 = message=>crypto.createHash("sha256").u
 const EC = require("elliptic").ec,ec = new EC("secp256k1");
 
 //const keyPair = ec.genKeyPair();
-//public key: keyPair.getPublic("hex");
+//public key:keyPair.getPublic("hex");
 //private ley:leyPair.getPrivate("hex");
 const MINT_KEY_PAIR = ec.genKeyPair();
 const MINT_PUBLIC_ADDRESS = MINT_KEY_PAIR.getPublic("hex");
