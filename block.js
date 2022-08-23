@@ -3,7 +3,7 @@ const EC = require("elliptic").ec,ec = new EC("secp256k1");
 
 //const keyPair = ec.genKeyPair();
 //public key: keyPair.getPublic("hex");
-//provate ley:leyPair.getPrivate("hex");
+//private ley:leyPair.getPrivate("hex");
 const MINT_KEY_PAIR = ec.genKeyPair();
 const MINT_PUBLIC_ADDRESS = MINT_KEY_PAIR.getPublic("hex");
 const holderKeyPair = ec.genKeyPair();
