@@ -63,6 +63,7 @@ class Blockchain{
         this.blockTime = 30000;
         //transaction pool
         this.transactions = [];
+        //reward for miner
         this.reward = 77;
     }
 
