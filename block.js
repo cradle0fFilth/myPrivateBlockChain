@@ -52,7 +52,7 @@ class Block {
     }
 }
 
-//blockchain is a list of block
+//blockchain is a list of blocks
 class Blockchain{
     
     constructor(){
